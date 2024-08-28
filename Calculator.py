@@ -42,7 +42,7 @@ class Multiplication(Operations):
 class Division(Operations):
     def calculate(self):
         if 0 in self.data.get_numbers():
-            return "Error: División por cero"
+            return "Error: División by zero"
         result = self.data.get_numbers()[0]  # Initialize with the first number
         for i in range(1, len(self.data.get_numbers())):
             result /= self.data.get_numbers()[i]
@@ -110,6 +110,6 @@ def main():
         else: 
             PrintResults().print_result(result)
     else:
-        print("No se ingresaron números.")
+        print("no more numbers entered.")
 if __name__ == "__main__":
     main()
